@@ -1,0 +1,4 @@
+name: Hola mundo
+type: module
+description: "Primer módulo custom realizado"
+core_version_requirement: ^11

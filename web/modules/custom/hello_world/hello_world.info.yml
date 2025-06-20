@@ -1,0 +1,4 @@
+name: Modulo Hello world
+description: Creación de un segundo módulo customizado
+type: module
+core_version_requirement: ^11

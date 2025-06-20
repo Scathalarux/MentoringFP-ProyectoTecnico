@@ -22,7 +22,8 @@
         "drupal/pathauto": "^1.13",
         "drupal/thex": "^11.0",
         "drupal/token": "^1.15",
-        "drupal/xara": "^11.0"
+        "drupal/xara": "^11.0",
+        "drush/drush": "^13.6"
     },
     "conflict": {
         "drupal/drupal": "*"

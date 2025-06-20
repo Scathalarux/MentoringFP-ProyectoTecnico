@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+
+function hola_mundo_help($route_name){
+    if($route_name == 'help.page.hola_mundo'){
+        return '<p>¡Hola mundo!</p>';
+    }
+}
+
+function hola_mundo_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+    
+    if ($view->id() == 'blog') {
+        $query->addWhere('status', 'node_field_data.status', 1);
+        //echo "<div style='text-align:center;background-color: #d2efe8;margin:0;'>Contenido mostrado por acción de un módulo custom: Hola Mundo! Muchas gracias por acceder a la sección de proyectos!</div>";
+    }
+
+}
+
+
