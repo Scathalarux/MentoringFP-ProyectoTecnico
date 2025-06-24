@@ -1,5 +1,5 @@
 hello_world.admin:
-  title: 'Configuración para el módulo de Hello World'
+  title: 'Configuración del Módulo de Hello World'
   description: 'Un ejemplo de cómo hacer un link de menu para la configuración del administrador'
   parent: system.admin_config_development
   route_name: hello_world.content
