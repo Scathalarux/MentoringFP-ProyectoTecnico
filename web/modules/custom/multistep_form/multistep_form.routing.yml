@@ -1,0 +1,7 @@
+multistep_form.display:
+  path: '/contacto'
+  defaults:
+    _form: '\Drupal\multistep_form\Form\MultistepForm'
+    _title: 'Formulario varios pasos en Drupal'
+  requirements:
+    _permission: 'access content'
