@@ -10,7 +10,7 @@ use \Drupal\Core\Block\BlockPluginInterface;
 function hello_world_block_view_alter(array &$build, BlockPluginInterface $block) {
   if($block->getBaseId() === 'hello_block') {
     // Modifica el contenido del bloque.
-        var_dump($block->label());
+        //var_dump($block->label());
 
   }
 

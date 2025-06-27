@@ -1,0 +1,44 @@
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+ol, ul {
+    list-style-type: none;
+}
+header {
+  background-color: #e2f3ef;
+  height: 15vh;
+  display: flex;
+  flex: wrap;
+}
+
+header > div {
+  width: 75%;
+  margin: auto;
+}
+
+article {
+  background-color: #f2fbf9;
+  padding: 2em;
+  width: 75%;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 15px;
+}
+
+article a:hover{
+  color: #88aea6;
+  font-weight: bold;    
+}
+
+article footer {
+    margin: 1em;
+}
+article .node__content > div{
+    margin: 1em;
+}
+

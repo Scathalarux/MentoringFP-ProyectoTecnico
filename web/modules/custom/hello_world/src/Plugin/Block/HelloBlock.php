@@ -23,7 +23,7 @@ class HelloBlock extends BlockBase {
    */
   public function build() {
     return [
-      '#markup' => $this->t('Hola Mundo! Muchas gracias por acceder a la web!'),
+      '#markup' => $this->t('¡Hola Mundo! Muchas gracias por acceder a la web'),
     ];
   }
 
