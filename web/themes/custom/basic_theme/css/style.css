@@ -1,16 +1,26 @@
+/*      GENERAL     */
 body {
   background-color: #ffffff;
   font-family: sans-serif;
   color: black;
 }
+.layout-container{
+    width: 100%;
+}
 a {
   text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-ol, ul {
-    list-style-type: none;
+form, article{
+    width: 65%;
+    margin: auto;
 }
+
+
+/*      CABECERA      */
 header {
-  background-color: #e2f3ef;
+  background-color: #e0e2f6;
   height: 15vh;
   display: flex;
   flex: wrap;
@@ -19,26 +29,102 @@ header {
 header > div {
   width: 75%;
   margin: auto;
+  display: flex;
 }
 
+header div > div, header div > nav{
+    display: inline-block;
+    width: 25%;
+}
+header div > nav{
+    width: 75%;
+}
+
+header div nav ul{
+    text-align: right;
+    
+    li{
+        display: inline-block;
+        margin: 0.5em;
+
+        a:hover{
+            border-bottom: 2px solid #ff6246;
+        }
+    }
+}
+/*      BREADCRUMB      */
+#block-basic-theme-breadcrumbs nav ol{
+    list-style-type: none;
+
+    li{
+        display: inline-block;
+    
+        a{
+            font-weight:normal;
+        }
+    
+        a:hover{
+            color: #ff6246;
+        }
+    }
+    li:before{
+        content: " / ";
+    }
+    li:first-of-type:before{
+        content: " 🏠 ";
+    }
+}
+
+
+/*      ARTÍCULOS Y ENTRADAS     */
 article {
-  background-color: #f2fbf9;
+  background-color: #f2f4ff;
   padding: 2em;
-  width: 75%;
-  margin: auto;
   margin-top: 1em;
   border-radius: 15px;
 }
 
 article a:hover{
-  color: #88aea6;
-  font-weight: bold;    
+  color: #ff6246;
 }
 
 article footer {
     margin: 1em;
 }
-article .node__content > div{
-    margin: 1em;
+
+article .node__content div{
+    margin: 2em 1em;
+    line-height: 1.5em;
+    
+}
+article .node__content div:last-of-type div:first-of-type{
+    display: none;
 }
 
+article .node__content div:last-of-type div:last-of-type div{
+    display: inline-block;
+
+    a{
+        padding: 1em;
+        background-color: #3f3d56;
+        border-radius: 15px;
+        color: white;
+    }
+
+}
+article .node__content div:last-of-type div:last-of-type div:hover{
+    -webkit-transform: scale(1.1);
+    
+    a{
+        background-color: #ff6246;    
+    }
+}
+
+article .node__content ul li{
+    display: inline-block;
+    margin: 1em;
+
+}
+
+
+/*      FORMULARIO      */

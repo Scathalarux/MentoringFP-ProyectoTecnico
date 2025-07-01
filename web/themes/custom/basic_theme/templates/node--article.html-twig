@@ -1,0 +1,9 @@
+<article class="mi-articulo">
+  <h2>{{ label }}</h2>
+  <div class="contenido">
+    {{ content.body }}
+  </div>
+  <footer>
+    <p>Publicado por {{ node.uid.entity.name.value }} el {{ node.created }}</p>
+  </footer>
+</article>

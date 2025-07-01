@@ -5,8 +5,6 @@ type: theme
 base theme: stable9
 libraries:
   - basic_theme/global-styling
-
-
 regions:
   header: 'Header'
   page_header: 'Page header'
