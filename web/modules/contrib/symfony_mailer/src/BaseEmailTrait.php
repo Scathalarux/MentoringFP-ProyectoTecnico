@@ -69,7 +69,8 @@ trait BaseEmailTrait {
     // Allow late setting of the to address for legacy emails. The langcode
     // will not be updated, however that is a limitation of the legacy mail
     // system.
-    if (!$legacy && $name == 'to') {      $this->valid(self::PHASE_BUILD, self::PHASE_INIT);
+    if (!$legacy && $name == 'to') {
+      $this->valid(self::PHASE_BUILD, self::PHASE_INIT);
       if ($this->phase == self::PHASE_BUILD) {
         @trigger_error('Calling \Drupal\symfony_mailer\Email::setTo() in the build phase is deprecated in symfony_mailer:1.6.0 and will fail in symfony_mailer:2.0.0. Call it in the initialisation phase instead. See https://www.drupal.org/node/3501754', E_USER_DEPRECATED);
       }

@@ -22,14 +22,15 @@ form, article{
 header {
   background-color: #e0e2f6;
   height: 15vh;
-  display: flex;
-  flex: wrap;
+  
 }
 
 header > div {
   width: 75%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 header div > div, header div > nav{
@@ -38,6 +39,9 @@ header div > div, header div > nav{
 }
 header div > nav{
     width: 75%;
+}
+header div > div:last-of-type{
+    width: 100%
 }
 
 header div nav ul{

@@ -4,7 +4,7 @@ description: 'Test theme which provides an alternative template for legacy test 
 base theme: stark
 core_version_requirement: ^10.3 || ^11
 
-# Information added by Drupal.org packaging script on 2025-06-05
-version: '1.6.1'
+# Information added by Drupal.org packaging script on 2025-06-27
+version: '1.6.2'
 project: 'symfony_mailer'
-datestamp: 1749108924
+datestamp: 1751013033
