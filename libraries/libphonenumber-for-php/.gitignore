@@ -1,0 +1,8 @@
+vendor/
+composer.phar
+composer.lock
+libphonenumber-data-dir/
+build/logs/
+/.php-cs-fixer.cache
+/infection.txt
+/.phpunit.cache
