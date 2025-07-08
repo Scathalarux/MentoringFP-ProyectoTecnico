@@ -1,0 +1,12 @@
+name: 'FractionSlider'
+description: 'Integrate FractionSlider jQuery plugin.'
+type: module
+package: 'Others'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block
+
+# Information added by Drupal.org packaging script on 2025-04-15
+version: '2.3.0'
+project: 'views_fractionslider'
+datestamp: 1744707564

@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Primary hook implementations for Breadcrumb Extra Field.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function breadcrumb_extra_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.breadcrumb_extra_field':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Breadcrumb Extra Field allows you to print breadcrumb between fields.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function breadcrumb_extra_field_entity_extra_field_info() {
+  $extra = [];
+
+  $admin = \Drupal::config('breadcrumb_extra_field.settings')->get('breadcrumb_extra_field_admin');
+  $entity_info = \Drupal::service('entity_type.manager')->getDefinitions();
+
+  foreach ($entity_info as $entity_type_key => $entity_type) {
+    $bundles = \Drupal::service('entity_type.bundle.info')->getBundleInfo($entity_type_key);
+    // Add breadcrumb to configured entity types.
+    foreach ($bundles as $bundle_key => $bundle) {
+      if (!empty($admin) && !empty($admin[$entity_type_key]) && isset($admin[$entity_type_key][$bundle_key]) && $admin[$entity_type_key][$bundle_key]) {
+        $extra[$entity_type_key][$bundle_key]['display']['breadcrumb'] = [
+          'label' => t('Breadcrumb'),
+          'description' => t('Breadcrumb extra field'),
+          'weight' => 0,
+          'visible' => FALSE,
+        ];
+      }
+    }
+  }
+
+  return $extra;
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function breadcrumb_extra_field_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('breadcrumb')) {
+    $build['breadcrumb'] = \Drupal::service('breadcrumb')->build(\Drupal::routeMatch())->toRenderable();
+  }
+}

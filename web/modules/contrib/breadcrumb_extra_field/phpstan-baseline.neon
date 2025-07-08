@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$account of method Drupal\\\\Tests\\\\BrowserTestBase\\:\\:drupalLogin\\(\\) expects Drupal\\\\Core\\\\Session\\\\AccountInterface, Drupal\\\\user\\\\Entity\\\\User\\|false given\\.$#"
+			count: 3
+			path: tests/src/Functional/BreadcrumbExtraFieldTest.php
+

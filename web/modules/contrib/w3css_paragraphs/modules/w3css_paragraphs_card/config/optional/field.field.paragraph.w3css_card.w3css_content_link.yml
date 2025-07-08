@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.w3css_content_link
+    - paragraphs.paragraphs_type.w3css_card
+  module:
+    - link
+id: paragraph.w3css_card.w3css_content_link
+field_name: w3css_content_link
+entity_type: paragraph
+bundle: w3css_card
+label: Link
+description: 'This is the wrapper link and it is applied to the whole card (to the content title, image and body fields). If you add a new link in the body field, the wrapper link will be applied only to the image. I set it up this way because you cannot nest links.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,39 @@
+{
+  "name": "drupal/breadcrumb_extra_field",
+  "description": "Breadcrumb Extra Field allows you to print breadcrumb between fields.",
+  "type": "drupal-module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/breadcrumb_extra_field",
+  "authors": [
+    {
+      "name": "Alberto Ortega (albeorte)",
+      "homepage": "https://www.drupal.org/u/albeorte",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Alejandro Cabarcos",
+      "homepage": "https://www.drupal.org/u/alejandro-cabarcos",
+      "role": "Maintainer"
+    },
+    {
+      "name": "CRZDEV",
+      "homepage": "https://www.drupal.org/u/crzdev",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Viktor Holovachek (AstonVictor)",
+      "homepage": "https://www.drupal.org/u/astonvictor",
+      "role": "Maintainer"
+      }
+    ],
+    "minimum-stability": "dev",
+    "support": {
+      "issues": "https://www.drupal.org/project/issues/breadcrumb_extra_field",
+      "source": "https://git.drupalcode.org/project/breadcrumb_extra_field"
+    },
+    "require": {
+        "php": ">=8.1",
+        "drupal/core": "^10.2 || ^11"
+    }
+}

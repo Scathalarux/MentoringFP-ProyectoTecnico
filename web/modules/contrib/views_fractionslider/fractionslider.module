@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Module file for fractionslider.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function fractionslider_theme(): array {
+  $theme['fractionslider_block'] = [
+    'variables' => [
+      'data' => NULL,
+    ],
+    'template' => 'fractionslider-block',
+  ];
+
+  return $theme;
+}

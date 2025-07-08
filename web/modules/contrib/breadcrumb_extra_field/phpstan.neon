@@ -1,0 +1,18 @@
+includes:
+	- phpstan-baseline.neon
+
+parameters:
+    level: 8
+    fileExtensions:
+        - php
+        - module
+        - inc
+        - theme
+        - install
+        - profile
+    ignoreErrors:
+        - message: '#.*return type has no value type specified.*#'
+        - message: '#.*has parameter .* with no type specified.*#'
+        - message: '#.*has no return type specified.*#'
+        - message: '#.*has parameter .* with no value type specified.*#'
+        - message: '#^Unsafe usage of new static#'

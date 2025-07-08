@@ -1,0 +1,4 @@
+w3css-paragraphs-three-columns:
+  css:
+    theme:
+      css/w3css-paragraphs-three-columns.css: { }

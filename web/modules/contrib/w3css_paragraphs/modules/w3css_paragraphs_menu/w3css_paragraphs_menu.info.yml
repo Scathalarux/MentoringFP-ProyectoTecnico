@@ -1,0 +1,14 @@
+name: W3CSS Paragraphs Menu
+type: module
+description: A reusable W3CSS paragraphs menu reference render bundle.
+core: 8.x
+core_version_requirement: ^9 || ^10 || ^11
+package: Paragraphs
+dependencies:
+  - menu_reference_render:menu_reference_render
+  - w3css_paragraphs:w3css_paragraphs
+
+# Information added by Drupal.org packaging script on 2025-01-20
+version: '1.0.19'
+project: 'w3css_paragraphs'
+datestamp: 1737396556

@@ -1,0 +1,94 @@
+/**
+ * @file
+ * Paragraph Bundle Accordion.
+ *
+ * Filename:     paragraph-bundle-accordion.css
+ * Website:      https://www.flashwebcenter.com
+ * Developer:    Alaa Haddad https://www.alaahaddad.com.
+ */
+.paragraph--type--accordion-bundle {
+  overflow: hidden;
+}
+
+.paragraph--type--accordion-bundle .pb__accor .pb__accor-wrap-btn-item {
+  border-block-end: var(--pb-px2) solid var(--pb-br);
+  overflow: hidden;
+}
+
+.paragraph--type--accordion-bundle .pb__accor > div:last-child {
+  border-block-end: none;
+}
+
+.paragraph.paragraph--type--accordion-bundle .pb__accor-button {
+  padding-block: var(--pb-px16);
+  padding-inline: var(--pb-px12);
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  white-space: initial;
+  cursor: pointer;
+  z-index: 1;
+  text-align: var(--pb-text-align-start);
+}
+
+.paragraph.paragraph--type--accordion-bundle .pb__accor-button > .pb__plus-minus {
+  display: flex;
+  margin-inline-start: auto;
+}
+
+.paragraph.paragraph--type--accordion-bundle .pb__active-no > .pb__accor-pane {
+  display: none;
+}
+
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item {
+  display: grid;
+  width: 100%;
+}
+
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item.pb__active > .pb__accor-pane,
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item.pb__active > .pb__accor-pane > *:first-child,
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item.pb__active > .pb__accor-pane > .paragraph > .paragraph__inner {
+  padding-block-start: 0;
+}
+
+.paragraph--type--accordion-bundle .pb__active .pb__accor-pane {
+  padding: var(--pb-px16);
+  border-block-start: none;
+  width: 100%;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-block-end: var(--pb-px10);
+  margin-inline-start: 0;
+  overflow: hidden;
+}
+
+.paragraph--type--accordion-bundle  .pb__accor-wrap-btn-item.pb__active,
+.paragraph--type--accordion-bundle  .pb__accor-wrap-btn-item.pb__active div {
+  background-color: var(--pb-bt-a);
+}
+
+.paragraph--type--accordion-bundle .pb__ex-button {
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.paragraph--type--accordion-bundle .pb__ex-button button,
+.paragraph--type--accordion-bundle .pb__accor-button > .pb__plus-minus {
+  font-size: var(--pb-px32);
+}
+
+.paragraph--type--accordion-bundle .pb__ex-button button {
+  padding: var(--pb-px10);
+}
+
+.paragraph--type--accordion-bundle .pb__ex-button .pb__minus,
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item .pb__plus-minus span {
+  display: none;
+}
+
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item.pb__active .pb__plus-minus span.pb__minus,
+.paragraph--type--accordion-bundle .pb__accor-wrap-btn-item.pb__active-no .pb__plus-minus span.pb__plus {
+  display: block;
+}

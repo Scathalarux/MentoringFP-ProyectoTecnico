@@ -1,0 +1,10 @@
+global-styles-and-scripts:
+  css:
+    component:
+      css/fractionslider.css: {}
+  js:
+    js/jquery.fractionslider.js: {}
+    js/fractionslider.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

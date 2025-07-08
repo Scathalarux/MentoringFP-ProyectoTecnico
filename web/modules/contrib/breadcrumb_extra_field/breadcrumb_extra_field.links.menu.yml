@@ -1,0 +1,6 @@
+breadcrumb_extra_field.settings:
+  title: 'Breadcrumb Extra Field'
+  description: 'Configure which entity types should have Breadcrumb extra field.'
+  parent: 'system.admin_config_system'
+  route_name: 'breadcrumb_extra_field.settings'
+  weight: 0
