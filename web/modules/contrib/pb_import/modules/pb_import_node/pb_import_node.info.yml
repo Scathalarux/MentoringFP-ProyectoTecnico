@@ -1,0 +1,13 @@
+name: 'PB Import Node'
+type: module
+description: 'This module create a content type with some fields to import content and can be used in Views Slideshow.'
+core_version_requirement: ^10 || ^11
+package: Paragraphs
+dependencies:
+  - pb_import:pb_import
+configure: pb_import_node.import_node
+
+# Information added by Drupal.org packaging script on 2024-08-04
+version: '1.0.0'
+project: 'pb_import'
+datestamp: 1722737115

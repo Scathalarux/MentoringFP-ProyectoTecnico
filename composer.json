@@ -24,14 +24,14 @@
         "drupal/core-recommended": "^11.1",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/easy_carousel": "^2.0",
+        "drupal/entity_usage": "^2.0@beta",
         "drupal/field_group": "^4.0",
         "drupal/holy": "^3.0@alpha",
         "drupal/jquery_ui_slider": "^2.1",
         "drupal/libraries": "^4.1",
-        "drupal/paragraphs": "^1.19",
-        "drupal/paragraphs_bundles": "^1.0",
         "drupal/pathauto": "^1.13",
         "drupal/phone_international": "^3.3",
+        "drupal/rename_admin_paths": "^3.0",
         "drupal/slick": "^3.0",
         "drupal/slick_views": "^3.0",
         "drupal/symfony_mailer_log": "^1.2",
@@ -42,10 +42,8 @@
         "drupal/vani": "^11.0",
         "drupal/views_fractionslider": "^2.3",
         "drupal/views_slideshow": "^5.0",
-        "drupal/w3css_paragraphs": "^1.0",
         "drupal/webform": "^6.3@beta",
         "drupal/xara": "^11.0",
-        "drush/drush": "^13.6",
         "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
@@ -121,5 +119,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drush/drush": "^13.6"
     }
 }

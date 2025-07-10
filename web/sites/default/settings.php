@@ -711,6 +711,7 @@ $settings['update_free_access'] = FALSE;
  */
 # $config['system.site']['name'] = 'My Drupal site';
 # $config['user.settings']['anonymous'] = 'Visitor';
+$config['system.logging']['error_level']='verbose';
 
 /**
  * Load services definition file.
@@ -899,4 +900,4 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 # }
 
 
-$settings['rebuild_access'] = TRUE;
+$settings['rebuild_access'] = FALSE;
