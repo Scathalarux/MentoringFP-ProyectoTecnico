@@ -110,11 +110,17 @@ article footer {
     margin: 1em;
 }
 
+article .node__content div.paragraph{
+    margin: 1em;
+    line-height: 1.5em;
+}
+
 article .node__content div{
     margin: 2em 1em;
     line-height: 1.5em;
-    
 }
+
+
 
 article.node--view-mode-teaser .node__content div:last-of-type div:first-of-type{
     display: none;
