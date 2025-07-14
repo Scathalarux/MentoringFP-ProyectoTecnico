@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "drupal/admin_toolbar": "^3.6",
         "drupal/blazy": "^3.0",
         "drupal/breadcrumb_extra_field": "^4.0",
         "drupal/contact_storage": "^1.4",

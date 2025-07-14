@@ -2,6 +2,7 @@
 *{
 box-sizing: border-box;
 line-height: 1.75em;
+text-align: left;
 }
 body {
   background-color: #ffffff;
@@ -25,8 +26,13 @@ form, article{
 /*      CABECERA      */
 header {
   background-color: #e0e2f6;
-  height: 25vh;
+  height: 50vh;
   padding: 0;
+  background-image: url("../images/slider.png");
+  background-repeat: no-repeat;
+  background-size: 10% 30%;
+  background-position-x: 85%;
+  background-position-y: 85%;
 }
 
 header > div {
@@ -34,8 +40,11 @@ header > div {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 3em 0;
   height: 100%;
   align-content:center;
+  justify-content:center;
+
 }
 
 header div > div, header div > nav{
@@ -126,7 +135,7 @@ article.node--view-mode-teaser .node__content div:last-of-type div:first-of-type
     display: none;
 }
 article.node--view-mode-teaser .node__content > div:last-of-type div:last-of-type div,
-article.node--view-mode-full .node__content > div:last-of-type div:last-of-type div{
+article.node--view-mode-full .node__content > div:last-of-type div{
     display: inline-block;
 
     a{
@@ -137,8 +146,7 @@ article.node--view-mode-full .node__content > div:last-of-type div:last-of-type 
     }
 
 }
-article.node--view-mode-teaser .node__content > div:last-of-type div:last-of-type div:hover, article.node--view-mode-full .node__content > div:last-of-type div:last-of-type div:hover{
-    -webkit-transform: scale(1.1);
+article.node--view-mode-teaser .node__content > div:last-of-type div:last-of-type div:hover, article.node--view-mode-full .node__content > div:last-of-type div:hover{
     
     a{
         background-color: #ff6246;    
