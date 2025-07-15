@@ -138,7 +138,7 @@ article.node--view-mode-teaser .node__content > div:last-of-type div:last-of-typ
 article.node--view-mode-full .node__content > div:last-of-type div{
     display: inline-block;
 
-    a{
+    a[href^="/taxonomy/term/"]{
         padding: 1em;
         background-color: #3f3d56;
         border-radius: 15px;
@@ -148,7 +148,7 @@ article.node--view-mode-full .node__content > div:last-of-type div{
 }
 article.node--view-mode-teaser .node__content > div:last-of-type div:last-of-type div:hover, article.node--view-mode-full .node__content > div:last-of-type div:hover{
     
-    a{
+    a[href^="/taxonomy/term/"]{
         background-color: #ff6246;    
     }
 }
@@ -179,6 +179,23 @@ article[data-history-node-id="1"].node--view-mode-full .node__content div{
         max-width: 75%;    
     }
 
+}
+
+article.node--view-mode-full .node__content div.pb__content-full, article.node--view-mode-full .node__content div.pb__content-full{
+
+    div:first-of-type{
+        font-size: 2em;
+        font-weight:bold;
+    }
+
+    a, p>a{
+        font-weight:bold;
+        color: #3f3d56;
+    }
+    
+    p>a:hover, a:hover{
+        color: #ff6246;
+    }
 }
 
 
@@ -257,6 +274,9 @@ form{
         width: 100%;
         margin: 1em 0; 
     }
+    div{
+    text-align:center;
+    }
 
     input[type="submit"]{
         width: 25%;
@@ -264,6 +284,7 @@ form{
         background-color: #3f3d56;
         border-radius: 15px;
         color: white;
+        text-align:center;
     }
     input[type="submit"]:hover{
         -webkit-transform: scale(1.1);
