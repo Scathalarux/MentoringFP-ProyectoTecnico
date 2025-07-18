@@ -66,8 +66,9 @@ Estas se presentan en formato artículo dentro de la sección de blog
 - Cómo mostrar proyectos en tu Github o portfolio
 - Comparativa CMS
 - Roles CMS/Framework: ¿cuándo conviene usar qué?
-- Emprendimiento digital
 - Consejos para presentarse a prácticas o al primer empleo web
+
+>> [Leer más](https://github.com/Scathalarux/MentoringFP-ActividadesTeoricas.git)
 
 
 ## Secciones
