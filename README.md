@@ -68,7 +68,7 @@ Estas se presentan en formato artículo dentro de la sección de blog
 - Roles CMS/Framework: ¿cuándo conviene usar qué?
 - Consejos para presentarse a prácticas o al primer empleo web
 
->> [Leer más](https://github.com/Scathalarux/MentoringFP-ActividadesTeoricas.git)
+[Leer más](https://github.com/Scathalarux/MentoringFP-ActividadesTeoricas.git)
 
 
 ## Secciones

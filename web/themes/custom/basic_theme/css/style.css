@@ -24,7 +24,7 @@ form, article{
 
 
 /*      CABECERA      */
-header {
+header[role="banner"] {
   background-color: #e0e2f6;
   height: 50vh;
   padding: 0;
@@ -35,7 +35,7 @@ header {
   background-position-y: 85%;
 }
 
-header > div {
+header[role="banner"] > div {
   width: 75%;
   margin: auto;
   display: flex;
@@ -47,23 +47,23 @@ header > div {
 
 }
 
-header div > div, header div > nav{
+header[role="banner"] div > div, header[role="banner"] div > nav{
     display: inline-block;
 }
 
-header div > div:first-of-type{
+header[role="banner"] div > div:first-of-type{
     width: 25%;
 }
 
 header div > nav{
     width: 75%;
 }
-header div > div:last-child{
+header[role="banner"] div > div:last-child{
     width: 100%;
     background:transparent;
 }
 
-header div nav ul{
+header[role="banner"] div nav ul{
     text-align: right;
     
     li{
@@ -184,7 +184,7 @@ article[data-history-node-id="1"].node--view-mode-full .node__content div{
 article.node--view-mode-full .node__content div.pb__content-full, article.node--view-mode-full .node__content div.pb__content-full{
 
     div:first-of-type{
-        font-size: 2em;
+        /*font-size: 2em;*/
         font-weight:bold;
     }
 
@@ -314,6 +314,7 @@ main nav[aria-labelledby^="pagination"] ul{
     display:flex;
     justify-content:center;
     align-items:center;
+    
 
     li{
         padding: 0.5em 1em;
@@ -330,6 +331,7 @@ main nav[aria-labelledby^="pagination"] ul{
         display:block;
         box-sizing:border-box;
         width: 100%;
+        text-align:center;
     }
 
     a:hover{
